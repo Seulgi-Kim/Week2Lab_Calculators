@@ -47,13 +47,15 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
                      request.setAttribute("plus", Integer.parseInt(first) + Integer.parseInt(second));
                 }
             
-                else if (minus.equals("-") ) {
+                else if ( minus.equals("-") ) {
                      request.setAttribute("minus", Integer.parseInt(first) - Integer.parseInt(second));
                 }
             
                 else if (multiply.equals("*") ) {
                      request.setAttribute("multiply", Integer.parseInt(first) * Integer.parseInt(second));
                 }
+                
+                
             
                 else {
                      request.setAttribute("modulo", Integer.parseInt(first) % Integer.parseInt(second));
@@ -62,7 +64,7 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
                         
                     getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp")
                 .forward(request, response);
-                    return;
+                    
                 
               
                 }

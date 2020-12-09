@@ -24,7 +24,7 @@
             
             <p>Result:  ${plus} ${minus} ${multiply} ${modulo} ${wrong}</p>
             
-            <a href="age">Age Calculator</a>
+            <a href="./age">Age Calculator</a>
         </form>
     </body>
 </html>
